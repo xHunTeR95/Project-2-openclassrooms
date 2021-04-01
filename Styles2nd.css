@@ -1,0 +1,623 @@
+
+@font-face 
+{
+	font-family: 'Raleway-VariableFont_wght';
+	src:url('fonts/Raleway-VariableFont_wght.ttf');
+	font-style: normal;
+	font-weight: normal;
+}
+body
+{
+	font-family: Raleway-VariableFont_wght;
+}
+
+header
+{ 
+	display: flex;
+ 	justify-content: space-between;
+    align-items: flex-end; 
+}
+
+
+#Logo img
+{
+
+    width: 100px;
+    height: auto;
+}
+
+.page
+{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+
+/* Body*/
+
+section
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+article, aside
+{
+    text-align: justify;
+}
+
+article
+{
+    margin-right: 20px;
+    flex: 3;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+}
+
+article a
+{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+aside
+{
+    flex: 1.2;
+    position: relative;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+
+
+/* NAVIGATION */
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+/*FILTRE*/
+
+#filtres
+{
+	display: flex;
+    align-items: center;
+}
+
+#formulaire-recherche i
+{
+    padding: 14px 15px 18px 15px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+}
+
+#formulaire-recherche input
+{
+    border: solid #F2F2F2 1px;
+}
+
+#formulaire-recherche input[type="submit"]
+{
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 0px 15px 15px 0px;
+    border: none;
+}
+
+.rechercher
+{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.rechercherT
+{
+    padding: 15px;
+}
+
+#boutons-filtres
+{
+    display: flex;
+    width: 100%;
+}
+
+#boutons-filtres a
+{
+    background-color: white;
+    border: solid #CCC 2px;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 0px 30px 0px 0px;
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+    margin-left: 2%;
+    margin:15px 0px 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+#filtres h3
+{
+    margin: 15px 0px 0px 0px;
+}
+
+.liens-filtres i
+{
+    border-radius: 30px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    padding: 11px;
+}
+
+.liens-filtres p
+{
+    margin: 0;
+}
+
+#paragraph 
+{
+    display: flex;
+    padding: 11px;
+    align-items: baseline;
+
+}
+
+#paragraph p
+{
+    padding: 7px;
+}
+
+
+
+
+
+
+
+/* Hébergements à Marseille */
+
+.background-annonce
+{
+	background-color: white;
+    border-radius: 25px;
+    margin: 2% 1% 2% 1%;
+    height: 200px;
+    min-width: 220px;
+    padding: 5px;
+    box-shadow: grey 0px 0px 15px;
+    flex: 0 0 29.333%;
+}
+
+.background
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.photo
+{
+    position: relative;
+    height: 100%;
+}
+
+.img
+{
+    background-position: center;
+    background-size: cover;
+    height: 90%;
+    border-radius: 25px;
+}
+
+#cannebiere .img
+{
+    background-image: url("images/hebergements/AubCannebiere.jpg");
+}
+
+#port .img
+{
+    background-image: url("images/hebergements/port.jpg");
+}
+
+#mouettes .img
+{
+    background-image: url("images/hebergements/mouettes.jpg");
+}
+
+#laMer .img
+{
+    background-image: url("images/hebergements/laMer.jpg");
+}
+
+#panier .img
+{
+    background-image: url("images/hebergements/panier.jpg");
+}
+
+#Amina .img
+{
+    background-image: url("images/hebergements/Amina.jpg");
+}
+
+.photo img
+{
+    border-radius: 25px;
+    padding: 5px;
+    height: 100%;
+}
+
+.description
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    height: 30%;
+    border-radius: 0px 0px 25px 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5% 0% 5% 5%;
+}
+
+.description >*
+{
+    margin: 0;
+}
+
+.description h3
+{
+    font-size: 17px;
+}
+
+.stars
+{
+    display: flex;
+}
+
+.blue
+{
+    color: #0065FC;
+}
+
+.grey
+{
+    color: #DEEBFF;
+}
+
+article h2
+{
+    margin-left: 4%;
+}
+
+#afficher-plus {
+	margin: 2% 4% 2% 4%;
+}
+
+/* .description h3
+{
+    position: absolute;
+    margin: 0px;
+    top: 0;
+}
+
+.description p
+{
+    position: absolute;
+    margin: 0px;
+    bottom: 0;
+} */
+
+
+
+/* LES PLUS Populaires */
+
+aside
+{
+    padding: 10px 3% 10px 3%;
+}
+
+#background2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 88%;
+}
+
+.background-annonce2
+{
+    background-color: white;
+    border-radius: 25px;
+    height: 100%;
+    padding: 5px 150px 5px 5px;
+    box-shadow: grey 0px 0px 15px;
+    margin: 5% 0% 5% 0%;
+    min-width: 210px;
+}
+
+.photo2
+{
+    position: relative;
+    height: 100%;
+}
+
+
+.img2
+{
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.titre-populaires
+{
+    margin: 0;
+    padding-top: 10px;
+}
+
+.titre-populaires h3
+{
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.titre-populaires p
+{
+    margin-top: 0px;
+}
+
+.description2
+{
+    position: absolute;
+    left: 60%;
+    right: -141px;
+    bottom: 0px;
+    background-color: white;
+    height: 94.5%;
+    border-radius: 0px 25px 25px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0% 0% 5% 5%;
+}
+
+
+.description2 h3
+{
+    font-size: 17px;
+}
+
+
+
+#soleil .img2
+{
+    background-image: url(images/hebergements/soleil.jpg);
+}
+
+#eau .img2
+{
+    background-image: url(images/hebergements/eau.jpg);
+}
+
+#bleu .img2
+{
+    background-image: url(images/hebergements/bleu.jpg);
+}
+
+
+aside h2
+{
+    margin-left: 4%;
+}
+
+/* Activités à Marseille */
+
+#background3
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.background-annonce3
+{
+    background-color: white;
+    border-radius: 25px;
+    margin: 0px 0px 0px 0px;
+    height: 220px;
+    width: 240px;
+    padding: 0px 10px 10px 0px;    
+}
+
+.background-annonce3-1
+{
+    background-color: white;
+    border-radius: 25px;
+    height: 450px;
+    width: 300px;
+    padding: 0px 10px 10px 0px;
+  
+}
+
+.photo3
+{
+    position: relative;
+    height: 100%;
+}
+
+.img3
+{
+    background-position: center;
+    background-size: cover;
+    height: 90%;
+    border-radius: 25px 25px 0px 0px;
+}
+
+
+.description3
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    height: 15%;
+    border-radius: 0px 0px 25px 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5% 0% 5% 5%;
+    box-shadow: grey 0px 0px 15px;
+}
+
+.description3-1
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    height: 8%;
+    border-radius: 0px 0px 25px 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5% 0% 5% 5%;
+    box-shadow: grey 0px 0px 15px;
+}
+
+
+.description3 >*
+{
+    margin: 0;
+}
+
+.description3 h3
+{
+    font-size: 17px;
+}
+
+#vieuxport .img3
+{
+    background-image: url(images/activites/vieuxport.jpg);
+}
+
+#Pomègues .img3
+{
+    background-image: url(images/activites/Pomègues.jpg);
+}
+
+#Frioul .img3
+{
+    background-image: url(images/activites/Frioul.jpg);
+}
+
+
+
+#Calanques .img3
+{
+    background-image: url(images/activites/Calanques.jpg);
+}
+
+
+#Garde .img3
+{
+    background-image: url(images/activites/Garde.jpg);
+}
+
+
+#Longchamp .img3
+{
+    background-image: url(images/activites/Longchamp.jpg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer
+{
+    display: flex;
+    background-color: #F2F2F2;
+    padding-top: 25px;
+    margin-top: 25px;
+}
+
+footer h3
+{
+    margin-left: 14%;
+}
+
+
+footer ul
+{
+    margin-left: 2%;
+	list-style-type: none;
+}
+footer a
+{
+	color: black;
+	text-decoration: none;
+}
+
+#apropos
+{
+    width: 33%;
+}
+
+#NosHebergements
+{
+    width: 33%;
+}
+
+#Assistance
+{
+    width: 33%;
+}
