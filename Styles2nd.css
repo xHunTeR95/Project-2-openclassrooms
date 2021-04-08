@@ -128,7 +128,7 @@ nav a:hover
     align-items: center;
 }
 
-#formulaire-recherche i
+#button-desktop
 {
     padding: 14px 15px 18px 15px;
     background-color: #F2F2F2;
@@ -163,6 +163,11 @@ nav a:hover
 .rechercherT
 {
     padding: 15px;
+}
+
+.rechercher-mobile
+{
+    display: none;
 }
 
 #boutons-filtres
@@ -575,7 +580,7 @@ aside
 
 #vieuxport .img3
 {
-    background-image: url(images/activites/Vieuxport.jpg);
+    background-image: url(images/activites/vieuxport.jpg);
 }
 
 #Pomègues .img3
@@ -758,22 +763,32 @@ footer a
         width: 50%;
     }
 
-    #formulaire-recherche i
+    .rechercher-mobile
     {
-        padding: 15px 15px 16px 15px;
+        display: inline-block;
+        margin-left: -15px;
     }
 
-    /*.rechercher-mobile
+    .rechercher
     {
-        background-color: blue;
+        display: none;
+    }
+
+    #button-mobile
+    {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    #formulaire-recherche button[type="submit"]
+    {
+        background-color: #0065FC;
         color: white;
         font-weight: bold;
         padding: 15px;
-        border-radius: 0px 5px 5px 0px;
-
-    }*/
-
-
+        border-radius: 15px 15px 15px 15px;
+        border: none;
+    }
 
 
     /*filtres*/
