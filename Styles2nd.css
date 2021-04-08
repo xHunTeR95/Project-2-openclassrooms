@@ -58,6 +58,14 @@ article a
 {
     text-decoration: none;
     color: black;
+    flex: 0 0 29.333%;
+}
+
+aside a
+{
+    text-decoration: none;
+    color: black;
+    flex: 0 0 29.333%;
 }
 
 
@@ -77,6 +85,11 @@ aside
 
 
 /* NAVIGATION */
+.show-html
+{
+    display: none;
+}
+
 nav ul
 {
     list-style-type: none;
@@ -91,15 +104,20 @@ nav li
 
 nav a
 {
-    font-size: 1.3em;
+    font-size: 1em;
     padding-bottom: 3px;
     text-decoration: none;
+    color: black;
+    margin: 0px 15px 0px 15px;
 }
+
+
 
 nav a:hover
 {
-    color: #760001;
-    border-bottom: 3px solid #760001;
+    color: #0065FC;
+    border-top: solid 3px #0065FC;
+    padding-top: 22px;
 }
 
 /*FILTRE*/
@@ -139,6 +157,7 @@ nav a:hover
     font-weight: bold;
     padding: 15px;
     border-radius: 0px 5px 5px 0px;
+
 }
 
 .rechercherT
@@ -154,7 +173,6 @@ nav a:hover
 
 #boutons-filtres a
 {
-    background-color: white;
     border: solid #CCC 2px;
     border-radius: 30px;
     font-size: 16px;
@@ -168,6 +186,11 @@ nav a:hover
     align-items: center;
 }
 
+#boutons-filtres a:hover
+{
+    background-color: #DEEBFF;
+}
+
 #filtres h3
 {
     margin: 15px 0px 0px 0px;
@@ -179,6 +202,7 @@ nav a:hover
     background-color: #DEEBFF;
     color: #0065FC;
     padding: 11px;
+    margin: -2px 0px -1px -2px;
 }
 
 .liens-filtres p
@@ -347,17 +371,29 @@ article h2
 
 /* LES PLUS Populaires */
 
+#h2-populaires
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#h2-populaires i
+{
+    font-size: 1.5em;
+}
+
 aside
 {
     padding: 10px 3% 10px 3%;
 }
 
-#background2
+#background-aside
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 88%;
+    justify-content: space-around;
+    height: 85%;
 }
 
 .background-annonce2
@@ -367,7 +403,6 @@ aside
     height: 100%;
     padding: 5px 150px 5px 5px;
     box-shadow: grey 0px 0px 15px;
-    margin: 5% 0% 5% 0%;
     min-width: 210px;
 }
 
@@ -396,6 +431,7 @@ aside
 {
     margin-bottom: 10px;
     margin-top: 5px;
+    text-align: start;
 }
 
 .titre-populaires p
@@ -442,18 +478,12 @@ aside
 }
 
 
-aside h2
-{
-    margin-left: 4%;
-}
-
 /* Activités à Marseille */
 
 #background3
 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 
@@ -462,7 +492,7 @@ aside h2
     background-color: white;
     border-radius: 25px;
     margin: 0px 0px 0px 0px;
-    height: 220px;
+    height: 200px;
     width: 240px;
     padding: 0px 10px 10px 0px;    
 }
@@ -481,13 +511,15 @@ aside h2
 {
     position: relative;
     height: 100%;
+    box-shadow: #CACACA 0px 0px 15px;
+    border-radius: 30px;
 }
 
 .img3
 {
     background-position: center;
     background-size: cover;
-    height: 90%;
+    height: 85%;
     border-radius: 25px 25px 0px 0px;
 }
 
@@ -505,7 +537,6 @@ aside h2
     justify-content: space-between;
     flex-direction: column;
     padding: 5% 0% 5% 5%;
-    box-shadow: grey 0px 0px 15px;
 }
 
 .description3-1
@@ -521,7 +552,6 @@ aside h2
     justify-content: space-between;
     flex-direction: column;
     padding: 5% 0% 5% 5%;
-    box-shadow: grey 0px 0px 15px;
 }
 
 
@@ -533,6 +563,14 @@ aside h2
 .description3 h3
 {
     font-size: 17px;
+    color: black;
+}
+
+.description3-1 h3
+{
+    font-size: 17px;
+    color: black;
+    margin: 0;
 }
 
 #vieuxport .img3
@@ -570,9 +608,29 @@ aside h2
 }
 
 
+#PandF
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+#Pomègues
+{
+    height: 255px;
+}
 
+#Frioul
+{
+    height: 150px;
+}
 
+#GandL
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 
 
@@ -592,13 +650,13 @@ footer
 
 footer h3
 {
-    margin-left: 14%;
+    margin-left: 11%;
 }
 
 
 footer ul
 {
-    margin-left: 2%;
+    margin-left: 3%;
 	list-style-type: none;
 }
 footer a
@@ -620,4 +678,249 @@ footer a
 #Assistance
 {
     width: 33%;
+}
+
+#liste_apropos, #liste_NosHebergements, #liste_Assistance
+{
+    line-height: 2.3em;
+}
+
+
+
+
+
+
+/* MOBILE */
+@media only screen and (max-width: 480px)
+{
+    .show-html
+    {
+        display: inline-block;
+    }
+
+    .hide-nav
+    {
+        visibility: hidden;
+    }
+
+    .show-html ul
+    {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .show-html ul li
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    .show-html a
+    {
+        text-decoration: none;
+        font-size: 1.5em;
+        padding-bottom: 15px;
+        color: black;
+        width: 100%;
+        display: inline-block;
+        padding-top: 10px;
+        border-bottom: solid 3px #F2F2F2;
+    }
+
+    .show-html a:hover
+    {
+        color: #0065FC;
+        border-bottom: solid 3px #0065FC;
+    }
+
+    .show-html
+    {
+        width: 100vw;
+        margin-left: -6%;
+    }
+
+    nav ul
+    {
+        display: flex;
+        margin-left: -20%;
+    }
+
+    #rechercher
+    {
+        text-align: center;
+    }
+
+    .rechercherT
+    {
+        padding: 14px;
+        width: 50%;
+    }
+
+    #formulaire-recherche i
+    {
+        padding: 15px 15px 16px 15px;
+    }
+
+    /*.rechercher-mobile
+    {
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 0px 5px 5px 0px;
+
+    }*/
+
+
+
+
+    /*filtres*/
+
+    #filtres, #boutons-filtres
+    {
+        flex-wrap: wrap;
+    }
+
+    #filtres h3
+    {
+        margin-left: 3%;
+    }
+
+    /*LES PLUS POPULAIRES Mobile*/
+
+    .description2
+    {
+        left: 80%;
+
+    }
+
+    
+    section
+    {
+        flex-direction: column-reverse;
+    }
+
+    .background-annonce2
+    {
+        height: 160px;
+        margin: 10px 17px 10px 25px;
+        padding-top: 7px;
+        min-width: 185px;
+    }
+    
+    aside
+    {
+        width: 100vw;
+        margin-left: -6%;
+        padding: 0;
+    }
+
+    #h2-populaires
+    {
+        margin: 15px 15px 0px 15px;
+    }
+
+    #h2-populaires h2
+    {
+        margin-left: 6%;
+    }
+
+
+    #h2-populaires i
+    {
+        margin-right: 4%;
+    }
+
+    #background-aside
+    {
+        margin: 0px 15px 15px 15px;
+    }
+
+
+    /*Hébergements à marseille MOBILE*/
+
+    article
+    {
+        flex-direction: column;
+        background-color: white;
+    }
+    
+
+    .background-annonce
+    {
+        min-width: 385px;
+        height: 228px;
+        margin: 2% 1% 2% 4%;
+    }
+
+    /*Activités à MARSEILLE Mobile*/
+
+    #activites
+    {
+         margin-left: 4%;
+    }
+
+    #background3
+    {
+        flex-direction: column;
+        padding-left: 7%;
+        padding-right: 10%;
+    }
+   
+
+    .background-annonce3
+    {
+        padding: 0px 10px 10px 0px;
+        min-width: 400px;
+        height: 255px;
+        margin: 0px 0px 0px -8px;
+
+    }
+
+    .background-annonce3-1
+    {
+        min-width: 400px;
+        height: 255px;
+        margin: 0px 0px 0px -8px;
+    }
+   
+    #Frioul
+    {
+        height: 270px;
+    }
+   
+    .photo3
+    {
+        height: 90%;
+        min-width: 100%;
+    }
+
+    /*FOOTER MOBiLE*/
+
+    footer h3
+    {
+        margin-left: 12%;
+    }
+
+    footer
+    {
+        flex-direction: column;
+    }
+
+    footer ul
+    {
+        margin-left: 12%;
+        padding: 0;
+    }
+
+    #apropos, #NosHebergements, #Assistance
+    {
+        width: 100%;
+    }
+
+
+
+
 }
