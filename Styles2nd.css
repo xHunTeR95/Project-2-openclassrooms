@@ -236,7 +236,7 @@ nav a:hover
 
 /* Hébergements à Marseille */
 
-.background-annonce
+.background-annonce-hebergements
 {
 	background-color: white;
     border-radius: 25px;
@@ -248,7 +248,7 @@ nav a:hover
     flex: 0 0 29.333%;
 }
 
-.background
+.background-hebergements
 {
     display: flex;
     flex-wrap: wrap;
@@ -258,13 +258,13 @@ nav a:hover
     padding-right: 3%;
 }
 
-.photo
+.photo-hebergements
 {
     position: relative;
     height: 100%;
 }
 
-.img
+.img-hebergements
 {
     background-position: center;
     background-size: cover;
@@ -272,44 +272,44 @@ nav a:hover
     border-radius: 25px;
 }
 
-#cannebiere .img
+#cannebiere .img-hebergements
 {
     background-image: url("images/hebergements/AubCannebiere.jpg");
 }
 
-#port .img
+#port .img-hebergements
 {
     background-image: url("images/hebergements/port.jpg");
 }
 
-#mouettes .img
+#mouettes .img-hebergements
 {
     background-image: url("images/hebergements/mouettes.jpg");
 }
 
-#laMer .img
+#laMer .img-hebergements
 {
     background-image: url("images/hebergements/laMer.jpg");
 }
 
-#panier .img
+#panier .img-hebergements
 {
     background-image: url("images/hebergements/panier.jpg");
 }
 
-#Amina .img
+#Amina .img-hebergements
 {
     background-image: url("images/hebergements/Amina.jpg");
 }
 
-.photo img
+.photo-hebergements img-hebergements
 {
     border-radius: 25px;
     padding: 5px;
     height: 100%;
 }
 
-.description
+.description-hebergements
 {
     position: absolute;
     left: 0;
@@ -324,12 +324,12 @@ nav a:hover
     padding: 5% 0% 5% 5%;
 }
 
-.description >*
+.description-hebergements >*
 {
     margin: 0;
 }
 
-.description h3
+.description-hebergements h3
 {
     font-size: 17px;
 }
@@ -354,23 +354,10 @@ article h2
     margin-left: 4%;
 }
 
-#afficher-plus {
+#afficher-plus 
+{
 	margin: 2% 4% 2% 4%;
 }
-
-/* .description h3
-{
-    position: absolute;
-    margin: 0px;
-    top: 0;
-}
-
-.description p
-{
-    position: absolute;
-    margin: 0px;
-    bottom: 0;
-} */
 
 
 
@@ -401,7 +388,7 @@ aside
     height: 85%;
 }
 
-.background-annonce2
+.background-annonce-aside
 {
     background-color: white;
     border-radius: 25px;
@@ -411,14 +398,14 @@ aside
     min-width: 210px;
 }
 
-.photo2
+.photo-aside
 {
     position: relative;
     height: 100%;
 }
 
 
-.img2
+.img-aside
 {
     background-position: center;
     background-size: cover;
@@ -444,7 +431,7 @@ aside
     margin-top: 0px;
 }
 
-.description2
+.description-aside
 {
     position: absolute;
     left: 60%;
@@ -460,24 +447,24 @@ aside
 }
 
 
-.description2 h3
+.description-aside h3
 {
     font-size: 17px;
 }
 
 
 
-#soleil .img2
+#soleil .img-aside
 {
     background-image: url(images/hebergements/soleil.jpg);
 }
 
-#eau .img2
+#eau .img-aside
 {
     background-image: url(images/hebergements/eau.jpg);
 }
 
-#bleu .img2
+#bleu .img-aside
 {
     background-image: url(images/hebergements/bleu.jpg);
 }
@@ -485,14 +472,14 @@ aside
 
 /* Activités à Marseille */
 
-#background3
+#background-activites
 {
     display: flex;
     justify-content: space-between;
 }
 
 
-.background-annonce3
+.background-annonce-activites
 {
     background-color: white;
     border-radius: 25px;
@@ -502,7 +489,7 @@ aside
     padding: 0px 10px 10px 0px;    
 }
 
-.background-annonce3-1
+.background-annonce-activites-1
 {
     background-color: white;
     border-radius: 25px;
@@ -512,7 +499,7 @@ aside
   
 }
 
-.photo3
+.photo-activites
 {
     position: relative;
     height: 100%;
@@ -520,7 +507,7 @@ aside
     border-radius: 30px;
 }
 
-.img3
+.img-activites
 {
     background-position: center;
     background-size: cover;
@@ -529,7 +516,7 @@ aside
 }
 
 
-.description3
+.description-activites
 {
     position: absolute;
     left: 0;
@@ -544,7 +531,7 @@ aside
     padding: 5% 0% 5% 5%;
 }
 
-.description3-1
+.description-activites-1
 {
     position: absolute;
     left: 0;
@@ -560,54 +547,54 @@ aside
 }
 
 
-.description3 >*
+.description-activites >*
 {
     margin: 0;
 }
 
-.description3 h3
+.description-activites h3
 {
     font-size: 17px;
     color: black;
 }
 
-.description3-1 h3
+.description-activites-1 h3
 {
     font-size: 17px;
     color: black;
     margin: 0;
 }
 
-#vieuxport .img3
+#vieuxport .img-activites
 {
     background-image: url(images/activites/Vieuxport.jpg);
 }
 
-#Pomègues .img3
+#Pomègues .img-activites
 {
     background-image: url(images/activites/Pomègues.jpg);
 }
 
-#Frioul .img3
+#Frioul .img-activites
 {
     background-image: url(images/activites/Frioul.jpg);
 }
 
 
 
-#Calanques .img3
+#Calanques .img-activites
 {
     background-image: url(images/activites/Calanques.jpg);
 }
 
 
-#Garde .img3
+#Garde .img-activites
 {
     background-image: url(images/activites/Garde.jpg);
 }
 
 
-#Longchamp .img3
+#Longchamp .img-activites
 {
     background-image: url(images/activites/Longchamp.jpg);
 }
@@ -805,7 +792,7 @@ footer a
 
     /*LES PLUS POPULAIRES Mobile*/
 
-    .description2
+    .description-aside
     {
         left: 80%;
 
@@ -817,7 +804,7 @@ footer a
         flex-direction: column-reverse;
     }
 
-    .background-annonce2
+    .background-annonce-aside
     {
         height: 160px;
         margin: 10px 17px 10px 25px;
@@ -863,7 +850,7 @@ footer a
     }
     
 
-    .background-annonce
+    .background-annonce-hebergements
     {
         min-width: 385px;
         height: 228px;
@@ -877,7 +864,7 @@ footer a
          margin-left: 4%;
     }
 
-    #background3
+    #background-activites
     {
         flex-direction: column;
         padding-left: 7%;
@@ -885,7 +872,7 @@ footer a
     }
    
 
-    .background-annonce3
+    .background-annonce-activites
     {
         padding: 0px 10px 10px 0px;
         min-width: 400px;
@@ -894,7 +881,7 @@ footer a
 
     }
 
-    .background-annonce3-1
+    .background-annonce-activites-1
     {
         min-width: 400px;
         height: 255px;
@@ -906,7 +893,7 @@ footer a
         height: 270px;
     }
    
-    .photo3
+    .photo-activites
     {
         height: 90%;
         min-width: 100%;
